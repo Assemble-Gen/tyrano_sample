@@ -5,29 +5,54 @@
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+あなたはニューラルネットである。[l][r]
+今日の仕事は何だろうか....[l][r]
 
-メロスは激怒した。[l][r]
-
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
+[link target=*tag_sleep] →手書き数字の分類 [endlink][r]
 [link target=*tag_run] →走る [endlink][r]
+
+
+
+
+
+
 [s]
 
 *tag_sleep
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=mnist1or7.PNG time=500]
+
+この数字は何だ....？[l][r]
+
+[link target=*tag_1] →1だろうか。 [endlink][r]
+[link target=*tag_7] →7だろうか。 [endlink][r]
+
+*tag_1
+
+天から声が聞こえる....！
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_7
+
+
+MNISTは激怒した。[l][r]
+
+必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
 
 メロスは死んだように深く眠った。[l][r]
 勇者は、ひどく赤面した。[r]
+
+
+(中略)[l][r]
+
+ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
+メロスは...[l][r]
+
 
 【 BAD END 】[l][cm]
 
