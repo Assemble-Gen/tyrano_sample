@@ -9,6 +9,8 @@
 あなたはニューラルネットです。[l][r]
 今日の仕事は何でしょうか。[l][r]
 
+[eval exp="f.flag1 = 0"]
+
 [link target=*tag_sleep] →手書き数字の分類 [endlink][r]
 [link target=*tag_run] →走る [endlink][r]
 
@@ -22,30 +24,40 @@
 
 この数字はどっちだろうか？[l][r]
 
-[link target=*tag_1] →1と判定する。 [endlink][r]
-[link target=*tag_7] →7と判定する。 [endlink][r]
+[link target=*tag_11] →1と判定する。 [endlink][r]
+[link target=*tag_17] →7と判定する。 [endlink][r]
 
-*tag_1
+*tag_11
 
 あなたはこの画像を1と判定しました。
-
+[eval exp="f.flag1 = f.flag1 + 1"]
 
 [jump target=*2try]
 
-*tag_7
+*tag_17
 
 あなたはこの画像を7と判定しました。
 
 [jump target=*2try]
 
-
 *2try
-この数字は何だ....？[l][r]
-[bg storage=mnist2.PNG time=1000]
 
-[link target=*tag_12] →1と判定する。 [endlink][r]
-[link target=*tag_72] →7と判定する。 [endlink][r]
+この数字はどっちだろうか？[l][r]
+[bg storage=mnist2.PNG time=500]
 
+[link target=*tag_21] →1と判定する。 [endlink][r]
+[link target=*tag_27] →7と判定する。 [endlink][r]
+
+*tag_21
+
+あなたはこの画像を1と判定しました。
+[eval exp="f.flag1 = f.flag1 + 1"]
+
+*tag_72
+
+あなたはこの画像を7と判定しました。
+
+[jump target=*3try]
 
 
 MNISTは激怒した。[l][r]
