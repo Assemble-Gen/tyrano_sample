@@ -5,16 +5,12 @@
 [wait time=200]
 [freeimage layer="base"]
 
-あなたはニューラルネットである。[l][r]
-今日の仕事は何だろうか....[l][r]
+[bg storage=brain.PNG time=500]
+あなたはニューラルネットです。[l][r]
+今日の仕事は何でしょうか。[l][r]
 
 [link target=*tag_sleep] →手書き数字の分類 [endlink][r]
 [link target=*tag_run] →走る [endlink][r]
-
-
-
-
-
 
 [s]
 
@@ -24,20 +20,32 @@
 
 [bg storage=mnist1or7.PNG time=500]
 
-この数字は何だ....？[l][r]
+この数字はどっちだろうか？[l][r]
 
-[link target=*tag_1] →1だろうか。 [endlink][r]
-[link target=*tag_7] →7だろうか。 [endlink][r]
+[link target=*tag_1] →1と判定する。 [endlink][r]
+[link target=*tag_7] →7と判定する。 [endlink][r]
 
 *tag_1
 
-天から声が聞こえる....！
+あなたはこの画像を1と判定しました。
 
-【 BAD END 】[l][cm]
 
-[jump target=*start]
+[jump target=*2try]
 
 *tag_7
+
+あなたはこの画像を7と判定しました。
+
+[jump target=*2try]
+
+
+*2try
+この数字は何だ....？[l][r]
+[bg storage=mnist2.PNG time=1000]
+
+[link target=*tag_12] →1と判定する。 [endlink][r]
+[link target=*tag_72] →7と判定する。 [endlink][r]
+
 
 
 MNISTは激怒した。[l][r]
