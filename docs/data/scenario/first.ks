@@ -5,7 +5,7 @@
 [wait time=200]
 [freeimage layer="base"]
 
-[bg storage=brain.PNG time=500]
+[bg storage=brain.png time=500]
 どきどき！わくわく！★ニューラルネット体験★[l][r]
 [cm]
 あなたはニューラルネットです。[l][r]
@@ -29,7 +29,7 @@
 
 *start2
 [r][cm]
-[bg storage=brain.PNG time=500]
+[bg storage=brain.png time=500]
 あなたはニューラルネットです。[l][r]
 今日の仕事は何がいいですか？[l][r]
 
@@ -282,7 +282,7 @@
 *final
 [cm]
 [r]
-[bg storage=brain.PNG time=500]
+[bg storage=brain.png time=500]
 あなたがニューラルネットを使うとき、[r]
 ニューラルネットは退屈な作業を何千回も何万回も繰り返し強いられています。[l][r]
 それでもあなたは[r]
