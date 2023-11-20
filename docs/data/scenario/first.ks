@@ -1,11 +1,13 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="どきどき！わくわく！★ニューラルネット体験★"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
 [bg storage=brain.PNG time=500]
+どきどき！わくわく！★ニューラルネット体験★[l][r]
+[cm]
 あなたはニューラルネットです。[l][r]
 今日の仕事は何がいいですか？[l][r]
 
